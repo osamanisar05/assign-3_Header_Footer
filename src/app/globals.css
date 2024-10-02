@@ -2,26 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.header{
+  background-color:#0b2a3b ;
+  color: rgb(165, 247, 13);
+  height: 50px;
+  font-style:normal;
+  font-size:medium;
+  font-family: 'Times New Roman', Times, serif;
+  padding:40px;
+  
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.header-button{
+  /* margin-left: 10px; */
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 20px;
+
+}
+.footer{
+  margin-top: 520px;
+  background-color: rgb(18, 2, 48);
+  color: rgb(165, 247, 13);
+  font-style:normal;
+  font-size:medium;
+  font-family: 'Times New Roman', Times, serif;
+  height: 80px;
+  padding: 20px;
+  
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+.footer-button{
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  margin-left: 10px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 80px;
+  font-size: 25px;
+  
 }
+.homecontainer{
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: space-between;
+  background-color:#0b2a3b;
+
+
+}
+.childcontainer{
+
+  font-size: 30px;
+  font-style: italic;
+  color: #e4f1ed;
+  font-family: 'Times New Roman', Times, serif;
+
+ }
+.BlueColour{
+  color: rgb(188, 207, 12);
+}
+.profilePicture {
+  width: 200px; /* Set desired width */
+  height: 200px; /* Set desired height */
+  border-radius: 50%;  /* Makes it circular */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border: 1px solid #beb7ca; /* Optional: adds a border */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 0 50px #a29dd1)
+}  
